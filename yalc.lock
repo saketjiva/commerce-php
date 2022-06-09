@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "@adobe/gatsby-theme-aio": {
+      "signature": "8d00f2d60378ba21cc0c39c53234bbac",
+      "file": true,
+      "replaced": "4.2.3"
+    }
+  }
+}
