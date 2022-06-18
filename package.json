@@ -6,7 +6,7 @@
     "url": "https://github.com/AdobeDocs/commerce-php"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "file:.yalc/@adobe/gatsby-theme-aio",
+    "@adobe/gatsby-theme-aio": "4.2.3",
     "gatsby": "^4.16.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
