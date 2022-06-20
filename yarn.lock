@@ -6811,8 +6811,8 @@ __metadata:
   dependencies:
     "@adobe/gatsby-theme-aio": "file:.yalc/@adobe/gatsby-theme-aio"
     gatsby: ^4.16.0
-    react: ^17.0.0
-    react-dom: ^17.0.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
     remark-cli: ^10.0.1
     remark-validate-links: ^11.0.2
   languageName: unknown
@@ -16829,7 +16829,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.0, react-dom@npm:^17.0.1":
+"react-dom@npm:^17.0.1, react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -16928,7 +16928,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.0, react@npm:^17.0.1":
+"react@npm:^17.0.1, react@npm:^17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
