@@ -1,0 +1,34 @@
+{
+  "name": "commerce-php",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdobeDocs/commerce-php"
+  },
+  "dependencies": {
+    "@adobe/gatsby-theme-aio": "file:.yalc/@adobe/gatsby-theme-aio",
+    "gatsby": "^4.16.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "remark-cli": "^10.0.1",
+    "remark-validate-links": "^11.0.2"
+  },
+  "scripts": {
+    "start": "gatsby build && gatsby serve",
+    "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
+    "dev": "gatsby develop",
+    "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test:links": "remark src/pages --quiet --frail"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-validate-links"
+    ]
+  },
+  "packageManager": "yarn@3.2.1"
+}
