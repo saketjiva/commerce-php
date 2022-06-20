@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "@adobe/gatsby-theme-aio": {
-      "signature": "cda763e2a3b7b64ce7082702249a0e4f",
+      "signature": "1b4d6bc1df45b090c28aa1841376cd79",
       "file": true,
       "replaced": "4.2.3"
     }
