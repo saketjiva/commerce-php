@@ -8,6 +8,7 @@
   "dependencies": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@adobe/gatsby-theme-aio": "^4.2.3",
     "gatsby": "^4.13.0",
 =======
@@ -15,6 +16,9 @@
 =======
     "@adobe/gatsby-theme-aio": "4.2.3",
 >>>>>>> 5e3ea56 (removed old theme version)
+=======
+    "@adobe/gatsby-theme-aio": "file:.yalc/@adobe/gatsby-theme-aio",
+>>>>>>> 9658b90 (Updated theme package for testing)
     "gatsby": "^4.16.0",
 >>>>>>> 2139fba (theme test files)
     "react": "^17.0.0",
