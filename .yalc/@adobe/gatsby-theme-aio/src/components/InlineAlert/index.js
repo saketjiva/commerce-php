@@ -17,6 +17,12 @@ import PropTypes from 'prop-types';
 import '@spectrum-css/inlinealert';
 import classNames from 'classnames';
 
+const commonCss = css`
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding-right: 30px;
+`;
+
 const getIconName = (variant) => {
   let icon = variant;
 
@@ -35,16 +41,14 @@ const InlineAlertTexts = ({ texts }) => {
           className: 'spectrum-InLineAlert-content',
           css: css`
             margin-top: 0;
-            font-size: 1rem;
-            line-height: 1.3rem;
+            ${commonCss};
           `
         })
       : cloneElement(texts[textKey], {
           className: 'spectrum-InLineAlert-content',
           css: css`
             margin-top: var(--spectrum-global-dimension-size-150);
-            font-size: 1rem;
-            line-height: 1.3rem;
+            ${commonCss};
           `
         })
   );
@@ -60,6 +64,7 @@ const InlineAlert = ({ variant = 'info', header, ...props }) => {
       className={classNames('spectrum-InLineAlert', `spectrum-InLineAlert--${variant}`)}
       css={css`
         min-width: 100%;
+        margin-top: var(--spectrum-global-dimension-size-300);
       `}>
       <Icon className="spectrum-Icon spectrum-Icon--sizeM spectrum-InLineAlert-icon" />
       <div>

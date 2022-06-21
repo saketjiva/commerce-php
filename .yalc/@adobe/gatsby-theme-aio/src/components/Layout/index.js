@@ -522,7 +522,7 @@ export default ({ children, pageContext, location }) => {
                   z-index: 1;
                   width: ${SIDENAV_WIDTH};
                   height: 100%;
-                  background-color: var(--spectrum-global-color-gray-75);
+                  background-color: var(--spectrum-global-color-gray-100);
 
                   @media screen and (max-width: ${DESKTOP_SCREEN_WIDTH}) {
                     transition: transform var(--spectrum-global-animation-duration-200) ease-in-out;
