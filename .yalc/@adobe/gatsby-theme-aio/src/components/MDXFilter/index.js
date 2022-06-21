@@ -334,6 +334,8 @@ export default ({ children, pageContext, query }) => {
                     <div
                       css={css`
                         margin-left: auto;
+                        display: flex;
+                        align-items: center;
 
                         @media screen and (max-width: ${DESKTOP_SCREEN_WIDTH}) {
                           margin-left: 0;

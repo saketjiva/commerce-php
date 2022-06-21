@@ -21,7 +21,7 @@ const Breadcrumbs = ({ pages }) => (
     <ul className="spectrum-Breadcrumbs spectrum-Breadcrumbs--sizeM">
       {pages.map((page, index) =>
         page ? (
-          <li className="spectrum-Breadcrumbs-item" key={index}>
+          <li className="spectrum-Breadcrumbs-item spectrum-Breadcrumbs--sizeM" key={index}>
             <GatsbyLink className="spectrum-Breadcrumbs-itemLink" to={page.href}>
               {page.title}
             </GatsbyLink>

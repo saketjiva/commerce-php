@@ -29,7 +29,7 @@ const GitHubActions = ({ repository, branch, root, pagePath }) => {
   const rootFolder = root ? `/${root}` : '';
 
   return (
-    <div>
+    <>
       <ActionButton
         {...commonsProps}
         href={`https://github.com/${repository}/edit/${branch}${rootFolder}/src/pages/${pagePath}`}>
@@ -46,7 +46,7 @@ const GitHubActions = ({ repository, branch, root, pagePath }) => {
         <Bug />
         <Text>Log an issue</Text>
       </ActionButton>
-    </div>
+    </>
   );
 };
 
