@@ -64,7 +64,7 @@ module.exports = {
           default: require.resolve(`./src/components/MDXFilter/index.js`)
         },
         rehypePlugins: [require(`rehype-slug`)],
-        plugins: [`gatsby-transformer-remark`, `gatsby-remark-copy-linked-files`, `gatsby-remark-images`],
+        plugins: [`gatsby-transformer-remark`, `gatsby-remark-copy-linked-files`, `gatsby-remark-images-remote`],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-transformer-remark`
@@ -72,12 +72,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`, `md`, `mdx`],
-              destinationDir: `images`
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`, `md`, `mdx`]
             }
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `gatsby-remark-images-remote`,
             options: {
               maxWidth: DESKTOP_SCREEN_WIDTH,
               linkImagesToOriginal: false,
@@ -105,7 +104,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
-        appId: process.env.ALGOLIA_APP_ID,
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_WRITE_API_KEY,
         indexName: process.env.ALGOLIA_INDEX_NAME,
         queries: algoliaQueries,
