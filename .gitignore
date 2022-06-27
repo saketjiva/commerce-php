@@ -6,6 +6,8 @@ node_modules
 yarn-error.log
 .editorconfig
 .env
+
+# See https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .pnp.*
 .yarn/*
 !.yarn/patches
