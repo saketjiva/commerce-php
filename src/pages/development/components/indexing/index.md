@@ -87,9 +87,9 @@ The following figure shows the logic for partial reindexing.
 
 Depending on whether index data is up to date, an indexer status value is one of the following:
 
-Database Status|Admin Status|Description
-`valid`|Ready|Data is synchronized, no reindex required
-`invalid`|Reindex Required|The original data was changed, the index should be updated
+Database Status| Admin Status | Description
+`valid`|Ready| Data is synchronized, no reindex required.
+`invalid`|Reindex Required|The original data was changed, the index should be updated.
 `working`|Processing|Indexing is in progress
 
 The database status can be seen when viewing the SQL table `indexer_state`.
